@@ -479,8 +479,35 @@
     </div>
   </footer>
 
-  <!-- Simple Audio Player Script -->
+  <!-- Authentication Check and Audio Player Script -->
   <script>
+    // Check if user is authenticated
+    window.addEventListener('DOMContentLoaded', function() {
+      const isAuthenticated = localStorage.getItem('authenticated') || sessionStorage.getItem('authenticated');
+      
+      if (isAuthenticated !== 'true') {
+        // Not authenticated, redirect to login
+        window.location.href = 'login.html';
+        return;
+      }
+      
+      // Add logout button to header
+      const header = document.querySelector('header .max-w-7xl');
+      if (header) {
+        const logoutBtn = document.createElement('button');
+        logoutBtn.textContent = 'Déconnexion';
+        logoutBtn.className = 'bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors ml-4';
+        logoutBtn.onclick = function() {
+          localStorage.removeItem('authenticated');
+          sessionStorage.removeItem('authenticated');
+          localStorage.removeItem('userEmail');
+          sessionStorage.removeItem('userEmail');
+          window.location.href = 'login.html';
+        };
+        header.querySelector('.flex').appendChild(logoutBtn);
+      }
+    });
+    
     // Simple audio player functionality
     document.querySelectorAll('.play-btn').forEach(btn => {
       btn.addEventListener('click', function() {

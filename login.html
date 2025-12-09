@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
+  
+  <!-- Facebook Domain Verification -->
+  <meta name="facebook-domain-verification" content="kh3ag4nl3h90a85dhofa15d8kg0fp1" />
+  
   <title>Connexion | 21 Jours de Prière - Espace Membres</title>
 
   <!-- Google Fonts -->
@@ -109,13 +113,10 @@
         </button>
       </form>
 
-      <!-- Divider -->
-      <div class="mt-6 pt-6 border-t border-gray-200 text-center">
-        <p class="text-sm text-text-medium">
-          Première visite ? 
-          <a href="index-simplified.html#offre" class="text-primary-blue hover:text-primary-gold font-semibold transition-colors">
-            Accédez au guide ici
-          </a>
+      <!-- Info Box -->
+      <div class="mt-6 p-4 bg-secondary-light-blue rounded-lg">
+        <p class="text-sm text-text-medium text-center">
+          <strong>Info:</strong> Utilisez les identifiants fournis lors de votre achat pour accéder à votre contenu.
         </p>
       </div>
     </div>
@@ -129,12 +130,13 @@
   </div>
 
   <script>
-    // Simple authentication system (for demonstration)
-    // In production, this should be handled server-side with proper security
+    // Sistema de autenticação simples
+    // CREDENCIAIS PADRÃO:
+    // Email: membre@21joursdepriere.fr
+    // Senha: Priere2024!
     
     const validCredentials = [
-      { email: 'membre@21jours.fr', password: 'priere2024' },
-      { email: 'demo@example.com', password: 'demo123' }
+      { email: 'membre@21joursdepriere.fr', password: 'Priere2024!' }
     ];
 
     document.getElementById('login-form').addEventListener('submit', function(e) {
@@ -158,7 +160,7 @@
         storage.setItem('authTime', new Date().toISOString());
         
         // Redirect to members area
-        window.location.href = 'membres.html';
+        window.location.href = 'acces-membres.html';
       } else {
         // Show error
         errorMsg.classList.remove('hidden');
@@ -175,7 +177,7 @@
     window.addEventListener('DOMContentLoaded', function() {
       const isAuthenticated = localStorage.getItem('authenticated') || sessionStorage.getItem('authenticated');
       if (isAuthenticated === 'true') {
-        window.location.href = 'membres.html';
+        window.location.href = 'acces-membres.html';
       }
     });
   </script>

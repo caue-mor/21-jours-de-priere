@@ -2,11 +2,15 @@
   "version": 2,
   "rewrites": [
     {
+      "source": "/login",
+      "destination": "/login.html"
+    },
+    {
       "source": "/membres",
       "destination": "/acces-membres.html"
     },
     {
-      "source": "/espace-membres-xK9mN2p",
+      "source": "/espace-membres",
       "destination": "/acces-membres.html"
     }
   ],
