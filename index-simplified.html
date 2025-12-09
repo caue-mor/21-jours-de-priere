@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Et Si Vos Problèmes Ne Se Résolvaient Pas... Parce Que Vous Essayez Seul(e) ? 21 jours pour vous approcher de Dieu et regarder vos fardeaux devenir plus légers.">
+  <meta name="keywords" content="prière, vie chrétienne, méditation biblique, spiritualité, 21 jours, guide prière">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Et Si Vos Problèmes Ne Se Résolvaient Pas... Parce Que Vous Essayez Seul(e) ?">
+  <meta property="og:description" content="En 21 jours, apprenez à vous approcher de Dieu — et regardez vos fardeaux devenir plus légers.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og-image.jpg">
+
+  <title>Et Si Vos Problèmes Ne Se Résolvaient Pas... Parce Que Vous Essayez Seul(e) ? | 21 Jours Pour Se Rapprocher de Dieu</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS - Animate On Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary-blue': '#1a365d',
+            'primary-gold': '#d69e2e',
+            'secondary-teal': '#319795',
+            'secondary-cream': '#fffef0',
+            'secondary-light-blue': '#ebf8ff',
+            'text-dark': '#2d3748',
+            'text-medium': '#4a5568',
+            'text-light': '#718096',
+          },
+          fontFamily: {
+            'heading': ['Playfair Display', 'Georgia', 'serif'],
+            'body': ['Source Sans Pro', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-body text-text-dark bg-white">
+
+  <!-- ============================================ -->
+  <!-- HEADER -->
+  <!-- ============================================ -->
+  <header id="header" class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md border-b border-gray-100 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <div class="logo">
+          <a href="#" class="font-heading text-xl sm:text-2xl text-primary-blue font-semibold">
+            21 Jours de Prière
+          </a>
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="#guide" class="text-text-medium hover:text-primary-blue transition-colors">Le Guide</a>
+          <a href="#offre" class="text-text-medium hover:text-primary-blue transition-colors">Offre</a>
+          <a href="#faq" class="text-text-medium hover:text-primary-blue transition-colors">FAQ</a>
+        </nav>
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-btn" class="md:hidden text-text-medium p-2">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+      <div class="px-4 py-4 space-y-3">
+        <a href="#guide" class="block text-text-medium hover:text-primary-blue transition-colors">Le Guide</a>
+        <a href="#offre" class="block text-text-medium hover:text-primary-blue transition-colors">Offre</a>
+        <a href="#faq" class="block text-text-medium hover:text-primary-blue transition-colors">FAQ</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================ -->
+  <!-- SECTION 1: HERO -->
+  <!-- ============================================ -->
+  <section id="hero" class="min-h-screen flex items-center pt-20 bg-gradient-to-br from-secondary-light-blue to-secondary-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Text Content -->
+        <div class="text-center lg:text-left" data-aos="fade-right">
+          <p class="text-secondary-teal font-semibold text-sm sm:text-base uppercase tracking-wide mb-4">
+            Pour les chrétiens qui sentent que Dieu est loin
+          </p>
+          <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-blue leading-tight mb-6">
+            Et Si Vos Problèmes Ne Se Résolvaient Pas... Parce Que Vous Essayez Seul(e) ?
+          </h1>
+          <p class="text-lg sm:text-xl text-text-medium leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
+            Vous priez. Vous demandez. Mais rien ne change. Ce n'est pas que Dieu ne répond pas. C'est que la distance entre vous et Lui bloque tout. En 21 jours, apprenez à vous approcher de Dieu — et regardez vos fardeaux devenir plus légers.
+          </p>
+
+          <!-- Benefits -->
+          <ul class="space-y-3 mb-8 text-left max-w-md mx-auto lg:mx-0">
+            <li class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-secondary-teal flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-text-dark">15-20 minutes par jour suffisent</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-secondary-teal flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-text-dark">Méthode biblique, pas de théorie vide</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-secondary-teal flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-text-dark">Accès immédiat après paiement</span>
+            </li>
+          </ul>
+
+          <!-- CTA -->
+          <div class="space-y-4">
+            <a href="#offre" class="inline-flex items-center justify-center gap-2 bg-primary-gold hover:bg-amber-600 text-white font-semibold text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+              Je Veux Me Rapprocher de Dieu
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </a>
+            <p class="text-sm text-text-light">
+              Garantie 14 jours • Paiement 100% sécurisé
+            </p>
+          </div>
+        </div>
+
+        <!-- Product Mockup with Real Image -->
+        <div class="relative" data-aos="fade-left" data-aos-delay="200">
+          <div class="relative mx-auto max-w-md lg:max-w-lg">
+            <!-- Glow effect -->
+            <div class="absolute inset-0 bg-primary-gold/20 rounded-3xl blur-3xl transform -rotate-6"></div>
+            
+            <!-- Product Image Container -->
+            <div class="relative transform rotate-3 hover:rotate-0 transition-transform duration-500">
+              <!-- Main Product Image -->
+              <img 
+                src="https://yfzqpeasgsoorldogqwl.supabase.co/storage/v1/object/sign/test/Gemini_Generated_Image_v413elv413elv413.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85ZThkYWE0Mi1mZGJiLTQ5ZmEtOTJkZi1jOWVhYzU0ZWViOTkiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ0ZXN0L0dlbWluaV9HZW5lcmF0ZWRfSW1hZ2VfdjQxM2VsdjQxM2VsdjQxMy5wbmciLCJpYXQiOjE3NjUyOTMyMTUsImV4cCI6MTg5MTQzNzIxNX0.74MmYe-LuJ-2m-7yLL-fK3e80dNtUr-LT1XylZZIYaI"
+                alt="21 Jours de Prière - Guide Spirituel"
+                class="w-full max-w-sm mx-auto rounded-2xl shadow-2xl"
+              >
+              
+              <!-- Floating Elements Overlay -->
+              <!-- Audio Player Badge -->
+              <div class="absolute top-4 right-4 bg-white rounded-full shadow-lg p-3 animate-pulse">
+                <svg class="w-8 h-8 text-secondary-teal" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              
+              <!-- 21 Days Badge -->
+              <div class="absolute top-4 left-4 bg-primary-gold text-white rounded-full px-4 py-2 shadow-lg font-bold text-lg">
+                21 JOURS
+              </div>
+              
+              <!-- MP3 Audio Badge -->
+              <div class="absolute bottom-6 left-6 bg-white rounded-lg shadow-lg px-4 py-2 flex items-center gap-2">
+                <svg class="w-5 h-5 text-primary-blue" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z"/>
+                </svg>
+                <span class="text-sm font-semibold text-primary-blue">21 Audios MP3</span>
+              </div>
+              
+              <!-- Pages Badge -->
+              <div class="absolute bottom-6 right-6 bg-white rounded-lg shadow-lg px-4 py-2 flex items-center gap-2">
+                <svg class="w-5 h-5 text-secondary-teal" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/>
+                </svg>
+                <span class="text-sm font-semibold text-secondary-teal">79 Pages</span>
+              </div>
+              
+              <!-- Bonus Badge -->
+              <div class="absolute top-1/2 -right-4 bg-gradient-to-r from-primary-blue to-secondary-teal text-white rounded-full px-3 py-1 shadow-lg text-xs font-bold uppercase tracking-wide transform rotate-12">
+                + BONUS
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 2: PROBLEMA/SOLUÇÃO -->
+  <!-- ============================================ -->
+  <section id="problema-solucao" class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Problem Part -->
+      <div class="grid sm:grid-cols-2 gap-6 mb-20">
+        <!-- Problem 1 -->
+        <div class="bg-white rounded-xl p-6 shadow-sm border-l-4 border-red-400 hover:shadow-md hover:translate-y-[-2px] transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+          <div>
+            <h3 class="font-heading text-lg font-semibold text-primary-blue mb-2">
+              L'anxiété qui ne part pas
+            </h3>
+            <p class="text-text-medium leading-relaxed text-sm">
+              Malgré vos prières, cette inquiétude constante demeure...
+            </p>
+          </div>
+        </div>
+
+        <!-- Problem 2 -->
+        <div class="bg-white rounded-xl p-6 shadow-sm border-l-4 border-red-400 hover:shadow-md hover:translate-y-[-2px] transition-all duration-300" data-aos="fade-up" data-aos-delay="150">
+          <div>
+            <h3 class="font-heading text-lg font-semibold text-primary-blue mb-2">
+              Les prières qui semblent tomber dans le vide
+            </h3>
+            <p class="text-text-medium leading-relaxed text-sm">
+              Vous parlez, mais avez-vous l'impression qu'Il écoute ?
+            </p>
+          </div>
+        </div>
+
+        <!-- Problem 3 -->
+        <div class="bg-white rounded-xl p-6 shadow-sm border-l-4 border-red-400 hover:shadow-md hover:translate-y-[-2px] transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+          <div>
+            <h3 class="font-heading text-lg font-semibold text-primary-blue mb-2">
+              La culpabilité silencieuse
+            </h3>
+            <p class="text-text-medium leading-relaxed text-sm">
+              Ces fardeaux que vous portez seul(e), sans oser en parler...
+            </p>
+          </div>
+        </div>
+
+        <!-- Problem 4 -->
+        <div class="bg-white rounded-xl p-6 shadow-sm border-l-4 border-red-400 hover:shadow-md hover:translate-y-[-2px] transition-all duration-300" data-aos="fade-up" data-aos-delay="250">
+          <div>
+            <h3 class="font-heading text-lg font-semibold text-primary-blue mb-2">
+              Les problèmes qui s'accumulent
+            </h3>
+            <p class="text-text-medium leading-relaxed text-sm">
+              Un défi après l'autre, et vous vous sentez submergé(e)...
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Solution Part -->
+      <div class="max-w-3xl mx-auto text-center">
+        <div class="bg-gradient-to-b from-secondary-light-blue to-white rounded-2xl p-8 sm:p-12">
+          <p class="text-secondary-teal font-semibold text-sm uppercase tracking-wide mb-4" data-aos="fade-up">
+            La Solution
+          </p>
+          <h2 class="font-heading text-3xl sm:text-4xl font-bold text-primary-blue mb-6" data-aos="fade-up" data-aos-delay="100">
+            21 Jours Pour Ouvrir La Porte Entre Vous Et Dieu
+          </h2>
+          <p class="text-lg text-text-medium leading-relaxed mb-8" data-aos="fade-up" data-aos-delay="150">
+            Ce guide n'est pas un livre de plus sur la prière. C'est un chemin. Un parcours de 21 jours conçu pour vous prendre par la main et vous amener, étape par étape, vers une intimité réelle avec Dieu.
+          </p>
+
+          <!-- Quick benefits -->
+          <div class="grid sm:grid-cols-2 gap-4 text-left" data-aos="fade-up" data-aos-delay="200">
+            <div class="flex items-center gap-3 bg-white/50 rounded-lg p-3">
+              <span class="w-8 h-8 bg-primary-gold/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4 text-primary-gold" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/>
+                </svg>
+              </span>
+              <span class="text-text-dark">Un verset à méditer</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white/50 rounded-lg p-3">
+              <span class="w-8 h-8 bg-primary-gold/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4 text-primary-gold" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+              <span class="text-text-dark">Une réflexion profonde</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white/50 rounded-lg p-3">
+              <span class="w-8 h-8 bg-primary-gold/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4 text-primary-gold" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+              <span class="text-text-dark">Une prière guidée</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white/50 rounded-lg p-3">
+              <span class="w-8 h-8 bg-primary-gold/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4 text-primary-gold" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+              <span class="text-text-dark">Des questions de réflexion</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white/50 rounded-lg p-3">
+              <span class="w-8 h-8 bg-primary-gold/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4 text-primary-gold" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+              <span class="text-text-dark">Un défi pratique</span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 text-center mt-8">
+            <p class="text-lg text-primary-blue font-semibold">
+              En seulement 15-20 minutes par jour, vous construisez les fondations d'une vie de prière solide et durable.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 3: O QUE RECEBE (CONTENU) -->
+  <!-- ============================================ -->
+  <section id="guide" class="py-20 bg-secondary-light-blue">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-primary-blue mb-4">
+          Ce Que Vous Allez Recevoir
+        </h2>
+      </div>
+
+      <!-- Main Product -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden mb-8" data-aos="fade-up" data-aos-delay="100">
+        <div class="bg-primary-blue text-white p-6">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-primary-gold/20 rounded-full flex items-center justify-center">
+              <svg class="w-6 h-6 text-primary-gold" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-heading text-2xl font-bold">Guide PDF Complet</h3>
+              <p class="text-white/80">79 pages de contenu</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Week 1 -->
+        <div class="week-accordion">
+          <button class="week-header w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors" data-week="1">
+            <span class="font-heading text-lg text-primary-blue font-semibold">SEMAINE 1 : Fondements — Réapprendre à Prier</span>
+            <svg class="w-5 h-5 text-text-medium transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="week-content hidden px-6 pb-6">
+            <ul class="space-y-3">
+              <li class="py-2 border-b border-gray-100 text-text-dark">Jour 1 : Revenir à l'essentiel</li>
+              <li class="py-2 border-b border-gray-100 text-text-dark">Jour 2 : Connaître Celui à qui vous parlez</li>
+              <li class="py-2 border-b border-gray-100 text-text-dark">Jour 3 : Le modèle parfait (Le Notre Père)</li>
+              <li class="py-2 border-b border-gray-100 text-text-dark">Jour 4 : L'adoration - La porte d'entrée</li>
+              <li class="py-2 border-b border-gray-100 text-text-dark">Jour 5 : La confession - Nettoyer le canal</li>
+              <li class="py-2 border-b border-gray-100 text-text-dark">Jour 6 : La gratitude - Le secret oublié</li>
+              <li class="py-2 text-text-dark">Jour 7 : La supplication - Demander avec foi</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Week 2 -->
+        <div class="week-accordion border-t border-gray-100">
+          <button class="week-header w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors" data-week="2">
+            <span class="font-heading text-lg text-primary-blue font-semibold">SEMAINE 2 : Approfondissement — Entendre Sa Voix</span>
+            <svg class="w-5 h-5 text-text-medium transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="week-content hidden px-6 pb-6">
+            <ul class="space-y-3">
+              <li class="py-2 border-b border-gray-100 text-text-dark">Jour 8 : Écouter Sa voix</li>
+              <li class="py-2 border-b border-gray-100 text-text-dark">Jour 9 : Prier avec la Parole</li>
+              <li class="py-2 border-b border-gray-100 text-text-dark">Jour 10 : La persévérance dans la prière</li>
+              <li class="py-2 border-b border-gray-100 text-text-dark">Jour 11 : Prier selon Sa volonté</li>
+              <li class="py-2 border-b border-gray-100 text-text-dark">Jour 12 : L'intercession</li>
+              <li class="py-2 border-b border-gray-100 text-text-dark">Jour 13 : Le combat spirituel</li>
+              <li class="py-2 text-text-dark">Jour 14 : Le repos en Sa présence</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Week 3 -->
+        <div class="week-accordion border-t border-gray-100">
+          <button class="week-header w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors" data-week="3">
+            <span class="font-heading text-lg text-primary-blue font-semibold">SEMAINE 3 : Application — Une Vie Transformée</span>
+            <svg class="w-5 h-5 text-text-medium transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="week-content hidden px-6 pb-6">
+            <ul class="space-y-3">
+              <li class="py-2 border-b border-gray-100 text-text-dark">Jour 15 : Prier en tout temps</li>
+              <li class="py-2 border-b border-gray-100 text-text-dark">Jour 16 : Prier pour votre famille</li>
+              <li class="py-2 border-b border-gray-100 text-text-dark">Jour 17 : Prier pour votre travail</li>
+              <li class="py-2 border-b border-gray-100 text-text-dark">Jour 18 : Prier dans les moments difficiles</li>
+              <li class="py-2 border-b border-gray-100 text-text-dark">Jour 19 : Prier avec d'autres</li>
+              <li class="py-2 border-b border-gray-100 text-text-dark">Jour 20 : Le jeûne et la prière</li>
+              <li class="py-2 text-text-dark">Jour 21 : Un nouveau commencement</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bonus in PDF -->
+        <div class="border-t border-gray-100 p-6 bg-gray-50">
+          <h4 class="font-heading text-lg text-primary-blue font-semibold mb-4">BONUS INCLUS DANS LE GUIDE :</h4>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2 text-text-dark">
+              <svg class="w-5 h-5 text-secondary-teal" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Plan 90 jours
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bonus 1: Audio -->
+      <div class="bg-white rounded-2xl shadow-lg p-6 mb-4 border-2 border-dashed border-primary-gold" data-aos="fade-up" data-aos-delay="200">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-primary-gold/10 rounded-full flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-primary-gold" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/>
+            </svg>
+          </div>
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2">
+              <h3 class="font-heading text-xl font-bold text-primary-blue">21 Audios MP3</h3>
+              <span class="bg-primary-gold text-white text-xs font-bold px-3 py-1 rounded-full">BONUS</span>
+            </div>
+            <p class="text-text-light text-sm mb-2">Valeur : 27€ - <strong class="text-secondary-teal">INCLUS</strong></p>
+            <p class="text-text-medium">
+              Écoutez les prières de chaque jour où que vous soyez. Parfait pour vos trajets ou moments de pause.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bonus 2: Wallpapers -->
+      <div class="bg-white rounded-2xl shadow-lg p-6 mb-8 border-2 border-dashed border-primary-gold" data-aos="fade-up" data-aos-delay="250">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-primary-gold/10 rounded-full flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-primary-gold" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"/>
+            </svg>
+          </div>
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2">
+              <h3 class="font-heading text-xl font-bold text-primary-blue">10 Fonds d'écran</h3>
+              <span class="bg-primary-gold text-white text-xs font-bold px-3 py-1 rounded-full">BONUS</span>
+            </div>
+            <p class="text-text-light text-sm mb-2">Valeur : 10€ - <strong class="text-secondary-teal">INCLUS</strong></p>
+            <p class="text-text-medium">
+              Gardez la Parole de Dieu sous vos yeux, sur votre téléphone et ordinateur.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Value Summary -->
+      <div class="bg-primary-blue rounded-2xl p-8 text-center text-white max-w-md mx-auto" data-aos="fade-up" data-aos-delay="300">
+        <div class="space-y-2 mb-6">
+          <div class="flex justify-between text-lg">
+            <span class="text-white/80">Guide PDF 79 pages</span>
+            <span>47€</span>
+          </div>
+          <div class="flex justify-between text-lg">
+            <span class="text-white/80">21 Audios MP3</span>
+            <span>27€</span>
+          </div>
+          <div class="flex justify-between text-lg">
+            <span class="text-white/80">10 Fonds d'écran</span>
+            <span>10€</span>
+          </div>
+        </div>
+        <div class="border-t border-white/20 pt-6">
+          <p class="text-white/80 mb-2">Valeur totale : <span class="line-through">84€</span></p>
+          <p class="text-sm text-white/60 mb-1">VOTRE PRIX AUJOURD'HUI</p>
+          <p class="text-5xl font-bold text-primary-gold">17€</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 4: OFERTA + GARANTIA -->
+  <!-- ============================================ -->
+  <section id="offre" class="py-20 bg-gradient-to-b from-secondary-light-blue to-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-primary-blue mb-4">
+          Offre Spéciale
+        </h2>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Offer Box -->
+        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-primary-gold" data-aos="zoom-in" data-aos-delay="100">
+          <!-- Header -->
+          <div class="bg-primary-blue text-white p-8 text-center">
+            <h3 class="font-heading text-2xl font-bold mb-2">21 JOURS POUR TRANSFORMER</h3>
+            <p class="text-white/80 text-lg">VOTRE VIE DE PRIÈRE</p>
+          </div>
+
+          <!-- Body -->
+          <div class="p-8">
+            <!-- Features -->
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-center gap-3">
+                <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-text-dark">Guide PDF complet (79 pages)</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-text-dark">21 Audios MP3 des prières</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-text-dark">10 Fonds d'écran avec versets</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-text-dark">Plan de continuité 90 jours</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-text-dark">Accès à vie & mises à jour</span>
+              </li>
+            </ul>
+
+            <!-- Price -->
+            <div class="text-center py-6 border-t-2 border-b-2 border-dashed border-gray-200 mb-8">
+              <p class="text-text-light mb-2">Valeur totale : <span class="line-through">84€</span></p>
+              <p class="text-sm text-text-medium uppercase tracking-wider mb-2">VOTRE PRIX</p>
+              <p class="text-6xl font-bold text-primary-blue">17€</p>
+              <p class="text-text-medium mt-2">(paiement unique)</p>
+            </div>
+
+            <!-- CTA Button -->
+            <a href="#" class="block w-full bg-primary-gold hover:bg-amber-600 text-white text-center text-xl font-bold py-5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-300">
+              COMMANDER MAINTENANT →
+            </a>
+
+            <!-- Trust Badges -->
+            <div class="mt-6 space-y-2 text-center text-sm text-text-medium">
+              <p class="flex items-center justify-center gap-2">
+                <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
+                </svg>
+                Paiement 100% sécurisé
+              </p>
+              <p class="flex items-center justify-center gap-2">
+                <svg class="w-4 h-4 text-primary-gold" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/>
+                </svg>
+                Accès immédiat après paiement
+              </p>
+              <p class="flex items-center justify-center gap-2">
+                <svg class="w-4 h-4 text-secondary-teal" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Garantie 14 jours, remboursement sans conditions
+              </p>
+            </div>
+
+            <!-- Payment Logos -->
+            <div class="flex items-center justify-center gap-4 mt-6 opacity-60">
+              <svg class="h-8" viewBox="0 0 50 16" fill="currentColor"><path d="M17.5 3.5h3v9h-3v-9zm7.5 0h3v9h-3v-9zm-15 0h3v9h-3v-9zm25 0h3v9h-3v-9z"/></svg>
+              <span class="text-xs text-text-light">Visa • Mastercard • PayPal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Guarantee Section -->
+        <div class="text-center lg:text-left" data-aos="fade-left" data-aos-delay="200">
+          <!-- Guarantee Badge -->
+          <div class="w-32 h-32 bg-gradient-to-br from-primary-gold to-yellow-400 rounded-full flex flex-col items-center justify-center mx-auto lg:mx-0 mb-8 shadow-xl">
+            <svg class="w-12 h-12 text-white mb-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-white font-bold text-xs">14 JOURS</span>
+          </div>
+
+          <h2 class="font-heading text-3xl font-bold text-primary-blue mb-6">
+            Garantie 14 jours
+          </h2>
+
+          <div class="text-lg text-text-medium leading-relaxed space-y-4">
+            <p>
+              Je suis tellement convaincu(e) que ce guide va vous aider que je prends tout le risque sur moi.
+            </p>
+
+            <p>
+              <strong class="text-primary-blue">Testez le parcours pendant 14 jours complets.</strong>
+            </p>
+
+            <p>
+              Si vous n'êtes pas satisfait(e), envoyez-moi simplement un email et je vous rembourse intégralement.
+            </p>
+
+            <p class="font-semibold text-secondary-teal">
+              Remboursement sans conditions.
+            </p>
+
+            <p>
+              Vous pouvez même garder le guide.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 5: FAQ -->
+  <!-- ============================================ -->
+  <section id="faq" class="py-20 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-primary-blue mb-4">
+          Questions Fréquentes
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+        <!-- FAQ 1 -->
+        <div class="faq-item bg-white rounded-xl shadow-sm overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+          <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+            <span class="font-heading text-lg text-primary-blue font-semibold pr-4">Ce guide convient-il aux débutants ?</span>
+            <svg class="faq-icon w-5 h-5 text-text-medium flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6">
+            <p class="text-text-medium leading-relaxed">
+              Absolument. Ce guide s'adresse à tous, peu importe où vous en êtes dans votre parcours spirituel. Les enseignements sont accessibles et progressifs.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item bg-white rounded-xl shadow-sm overflow-hidden" data-aos="fade-up" data-aos-delay="150">
+          <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+            <span class="font-heading text-lg text-primary-blue font-semibold pr-4">Je n'ai que 10 minutes par jour. Est-ce suffisant ?</span>
+            <svg class="faq-icon w-5 h-5 text-text-medium flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6">
+            <p class="text-text-medium leading-relaxed">
+              Même 10 minutes peuvent suffire. L'important n'est pas la durée, mais la régularité et le cœur avec lequel vous vous approchez de Dieu.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item bg-white rounded-xl shadow-sm overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+          <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+            <span class="font-heading text-lg text-primary-blue font-semibold pr-4">Comment accéder au guide après l'achat ?</span>
+            <svg class="faq-icon w-5 h-5 text-text-medium flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6">
+            <p class="text-text-medium leading-relaxed">
+              Immédiatement après votre paiement, vous recevrez un email avec tous les liens de téléchargement. Accès instantané, 24h/24.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item bg-white rounded-xl shadow-sm overflow-hidden" data-aos="fade-up" data-aos-delay="250">
+          <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+            <span class="font-heading text-lg text-primary-blue font-semibold pr-4">Comment fonctionne la garantie ?</span>
+            <svg class="faq-icon w-5 h-5 text-text-medium flex-shrink-0 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6">
+            <p class="text-text-medium leading-relaxed">
+              Si vous n'êtes pas satisfait(e) dans les 14 jours, un simple email suffit pour un remboursement complet. Sans questions, sans conditions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 6: CTA FINAL -->
+  <!-- ============================================ -->
+  <section id="cta-final" class="py-20 bg-primary-blue">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white mb-6" data-aos="fade-up">
+        Dieu Vous Attend
+      </h2>
+
+      <p class="text-xl text-white/90 leading-relaxed mb-8 max-w-xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+        En ce moment même, pendant que vous lisez ces mots, Dieu vous attend. Il n'est pas loin. Il n'est pas en colère. Il veut simplement que vous veniez à Lui.
+      </p>
+
+      <div class="mb-8" data-aos="fade-up" data-aos-delay="150">
+        <blockquote class="text-lg text-white/80 italic border-l-4 border-primary-gold pl-4">
+          "Approchez-vous de Dieu, et Il s'approchera de vous." — Jacques 4:8
+        </blockquote>
+      </div>
+
+      <a href="#offre" class="inline-flex items-center justify-center gap-2 bg-primary-gold hover:bg-white text-primary-blue font-bold text-xl px-10 py-5 rounded-xl shadow-2xl hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300" data-aos="zoom-in" data-aos-delay="200">
+        OUI, JE VEUX COMMENCER MON PARCOURS
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+        </svg>
+      </a>
+
+      <p class="text-sm text-white/60 mt-4" data-aos="fade-up" data-aos-delay="250">
+        17€ seulement • Accès immédiat
+      </p>
+
+      <p class="text-xs text-white/50 mt-6" data-aos="fade-up" data-aos-delay="300">
+        Paiement sécurisé • Garantie 14 jours • Accès à vie
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- FOOTER -->
+  <!-- ============================================ -->
+  <footer class="bg-text-dark text-white py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Logo -->
+      <div class="text-center mb-8">
+        <span class="font-heading text-xl">21 Jours de Prière</span>
+      </div>
+
+      <!-- Links -->
+      <div class="flex flex-wrap justify-center gap-6 mb-8">
+        <a href="mentions-legales.html" class="text-white/70 hover:text-white text-sm transition-colors">Mentions Légales</a>
+        <a href="politique-confidentialite.html" class="text-white/70 hover:text-white text-sm transition-colors">Politique de Confidentialité</a>
+        <a href="cgv.html" class="text-white/70 hover:text-white text-sm transition-colors">CGV</a>
+        <a href="mailto:support@21joursdepriere.com" class="text-white/70 hover:text-white text-sm transition-colors">Contact</a>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center text-white/50 text-sm border-t border-white/10 pt-8">
+        <p>&copy; 2024 21 Jours de Prière. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+
+</body>
+</html>

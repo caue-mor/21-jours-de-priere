@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Connexion | 21 Jours de Prière - Espace Membres</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary-blue': '#1a365d',
+            'primary-gold': '#d69e2e',
+            'secondary-teal': '#319795',
+            'secondary-cream': '#fffef0',
+            'text-dark': '#2d3748',
+            'text-medium': '#4a5568',
+          },
+          fontFamily: {
+            'heading': ['Playfair Display', 'Georgia', 'serif'],
+            'body': ['Source Sans Pro', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-body text-text-dark bg-gradient-to-br from-secondary-cream to-white min-h-screen flex items-center justify-center">
+
+  <div class="max-w-md w-full mx-auto p-6">
+    <!-- Logo -->
+    <div class="text-center mb-8">
+      <h1 class="font-heading text-3xl font-bold text-primary-blue mb-2">21 Jours de Prière</h1>
+      <p class="text-text-medium">Espace Membres</p>
+    </div>
+
+    <!-- Login Form -->
+    <div class="bg-white rounded-2xl shadow-xl p-8">
+      <h2 class="font-heading text-2xl font-semibold text-primary-blue mb-6 text-center">
+        Connexion
+      </h2>
+
+      <!-- Error Message (hidden by default) -->
+      <div id="error-message" class="hidden bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg mb-4">
+        <p class="text-sm">Email ou mot de passe incorrect.</p>
+      </div>
+
+      <form id="login-form" class="space-y-6">
+        <!-- Email Field -->
+        <div>
+          <label for="email" class="block text-sm font-medium text-text-dark mb-2">
+            Adresse Email
+          </label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            required
+            placeholder="votre@email.com"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-gold focus:border-transparent transition-all"
+          >
+        </div>
+
+        <!-- Password Field -->
+        <div>
+          <label for="password" class="block text-sm font-medium text-text-dark mb-2">
+            Mot de Passe
+          </label>
+          <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            required
+            placeholder="••••••••"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-gold focus:border-transparent transition-all"
+          >
+        </div>
+
+        <!-- Remember Me -->
+        <div class="flex items-center justify-between">
+          <label class="flex items-center">
+            <input type="checkbox" id="remember" class="rounded border-gray-300 text-primary-gold focus:ring-primary-gold">
+            <span class="ml-2 text-sm text-text-medium">Se souvenir de moi</span>
+          </label>
+          <a href="#" class="text-sm text-primary-blue hover:text-primary-gold transition-colors">
+            Mot de passe oublié ?
+          </a>
+        </div>
+
+        <!-- Submit Button -->
+        <button 
+          type="submit"
+          class="w-full bg-primary-gold hover:bg-amber-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
+        >
+          Se Connecter
+        </button>
+      </form>
+
+      <!-- Divider -->
+      <div class="mt-6 pt-6 border-t border-gray-200 text-center">
+        <p class="text-sm text-text-medium">
+          Première visite ? 
+          <a href="index-simplified.html#offre" class="text-primary-blue hover:text-primary-gold font-semibold transition-colors">
+            Accédez au guide ici
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-8 text-center">
+      <p class="text-xs text-text-medium">
+        © 2024 21 Jours de Prière. Tous droits réservés.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // Simple authentication system (for demonstration)
+    // In production, this should be handled server-side with proper security
+    
+    const validCredentials = [
+      { email: 'membre@21jours.fr', password: 'priere2024' },
+      { email: 'demo@example.com', password: 'demo123' }
+    ];
+
+    document.getElementById('login-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const remember = document.getElementById('remember').checked;
+      const errorMsg = document.getElementById('error-message');
+      
+      // Check credentials
+      const isValid = validCredentials.some(cred => 
+        cred.email === email && cred.password === password
+      );
+      
+      if (isValid) {
+        // Store authentication
+        const storage = remember ? localStorage : sessionStorage;
+        storage.setItem('authenticated', 'true');
+        storage.setItem('userEmail', email);
+        storage.setItem('authTime', new Date().toISOString());
+        
+        // Redirect to members area
+        window.location.href = 'membres.html';
+      } else {
+        // Show error
+        errorMsg.classList.remove('hidden');
+        
+        // Shake animation
+        errorMsg.style.animation = 'shake 0.5s';
+        setTimeout(() => {
+          errorMsg.style.animation = '';
+        }, 500);
+      }
+    });
+
+    // Check if already logged in
+    window.addEventListener('DOMContentLoaded', function() {
+      const isAuthenticated = localStorage.getItem('authenticated') || sessionStorage.getItem('authenticated');
+      if (isAuthenticated === 'true') {
+        window.location.href = 'membres.html';
+      }
+    });
+  </script>
+
+  <style>
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+      20%, 40%, 60%, 80% { transform: translateX(5px); }
+    }
+  </style>
+
+</body>
+</html>

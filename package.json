@@ -1,0 +1,19 @@
+{
+  "name": "21-jours-de-priere",
+  "version": "1.0.0",
+  "description": "Landing page pour le guide spirituel 21 Jours de Prière",
+  "scripts": {
+    "serve": "python3 -m http.server 8000",
+    "deploy:netlify": "echo 'Push to GitHub and connect to Netlify'",
+    "deploy:vercel": "vercel",
+    "deploy:surge": "surge . 21joursdepriere.surge.sh"
+  },
+  "keywords": [
+    "prière",
+    "spiritualité",
+    "chrétien",
+    "méditation"
+  ],
+  "author": "21 Jours de Prière",
+  "license": "PRIVATE"
+}
