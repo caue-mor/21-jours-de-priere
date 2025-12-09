@@ -2,10 +2,6 @@
   "version": 2,
   "rewrites": [
     {
-      "source": "/",
-      "destination": "/index-simplified.html"
-    },
-    {
       "source": "/membres",
       "destination": "/acces-membres.html"
     },
