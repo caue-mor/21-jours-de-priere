@@ -12,12 +12,12 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>21 Orações da Quaresma — Oração que Transforma</title>
+<title>21 Orações da Quaresma — Retiro Espiritual Online</title>
 
 <!-- Facebook Domain Verification -->
 <meta name="facebook-domain-verification" content="kh3ag4nl3h90a85dhofa15d8kg0fp1" />
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -31,7 +31,6 @@
     --cream: #F5EDD8;
     --text: #E8DCC8;
     --text-dim: #A09080;
-    --red-urgent: #C0392B;
     --white: #FFFFFF;
   }
 
@@ -40,10 +39,10 @@
   body {
     background-color: var(--navy);
     color: var(--text);
-    font-family: 'Lato', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 1.85;
+    font-size: 17px;
+    line-height: 1.8;
     letter-spacing: 0.01em;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
@@ -85,7 +84,7 @@
   /* ---- LAYOUT ---- */
   .container {
     position: relative; z-index: 1;
-    max-width: 760px;
+    max-width: 720px;
     margin: 0 auto;
     padding: 0 24px;
   }
@@ -100,10 +99,10 @@
     backdrop-filter: blur(10px);
   }
   .topbar p {
-    font-size: 14px;
+    font-size: 13px;
     color: var(--gold-light);
     letter-spacing: 0.04em;
-    font-weight: 400;
+    font-weight: 500;
   }
   .topbar strong { color: var(--gold); }
 
@@ -115,9 +114,9 @@
 
   .eyebrow {
     display: inline-block;
-    font-family: 'Lato', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
     letter-spacing: 0.22em;
     text-transform: uppercase;
     color: var(--gold);
@@ -130,11 +129,11 @@
 
   .hero-title {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(34px, 6.5vw, 58px);
+    font-size: clamp(32px, 6.5vw, 54px);
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 1.18;
     color: var(--cream);
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     animation: fadeInUp 0.9s 0.2s ease both;
   }
   .hero-title em {
@@ -144,7 +143,7 @@
 
   .hero-sub {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(19px, 3.5vw, 26px);
+    font-size: clamp(18px, 3.5vw, 24px);
     font-weight: 400;
     font-style: italic;
     color: var(--gold-light);
@@ -174,8 +173,8 @@
   .verse-box span {
     display: block;
     margin-top: 10px;
-    font-size: 14px;
-    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
     color: var(--gold);
     letter-spacing: 0.1em;
   }
@@ -194,41 +193,40 @@
     font-size: clamp(28px, 5vw, 42px);
     font-weight: 600;
     color: var(--cream);
-    line-height: 1.3;
+    line-height: 1.25;
     margin-bottom: 24px;
     text-align: center;
   }
   h2 em { font-style: italic; color: var(--gold); }
 
-  h3 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--gold-light);
-    margin-bottom: 12px;
+  p { margin-bottom: 18px; font-size: 17px; line-height: 1.85; }
+
+  .highlight { color: var(--gold); font-weight: 600; }
+  .bold { font-weight: 600; color: var(--cream); }
+
+  /* ---- JESUS SECTION ---- */
+  .jesus-section {
+    padding: 80px 0;
+    background: rgba(200,169,110,0.04);
+    border-top: 1px solid rgba(200,169,110,0.15);
+    border-bottom: 1px solid rgba(200,169,110,0.15);
   }
-
-  p { margin-bottom: 18px; font-size: 18px; line-height: 1.9; }
-
-  .highlight { color: var(--gold); font-weight: 700; }
-  .bold { font-weight: 700; color: var(--cream); }
 
   /* ---- PAIN SECTION ---- */
   .pain-section { background: rgba(200,169,110,0.03); border-top: 1px solid rgba(200,169,110,0.1); border-bottom: 1px solid rgba(200,169,110,0.1); }
 
   .pain-list {
     list-style: none;
-    margin: 30px 0;
+    margin: 24px 0;
   }
   .pain-list li {
-    padding: 16px 24px;
-    margin-bottom: 12px;
+    padding: 14px 20px;
+    margin-bottom: 10px;
     border-left: 3px solid rgba(200,169,110,0.4);
     background: rgba(11,18,32,0.5);
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.7;
     color: var(--text);
-    position: relative;
   }
   .pain-list li::before {
     content: '\2192';
@@ -236,12 +234,10 @@
     margin-right: 10px;
   }
 
-  /* ---- STORY / TURNING ---- */
-  .story-section { text-align: center; }
-
+  /* ---- GOLDEN LINE ---- */
   .golden-line {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(20px, 4vw, 30px);
+    font-size: clamp(20px, 4vw, 28px);
     font-style: italic;
     color: var(--gold);
     line-height: 1.4;
@@ -298,7 +294,7 @@
   .product-items li {
     padding: 12px 0;
     border-bottom: 1px solid rgba(200,169,110,0.1);
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.7;
     display: flex;
     align-items: flex-start;
@@ -331,7 +327,7 @@
     display: flex;
     align-items: flex-start;
     gap: 18px;
-    padding: 20px 24px;
+    padding: 18px 24px;
     background: rgba(19,29,48,0.6);
     border-bottom: 1px solid rgba(200,169,110,0.1);
     transition: background 0.3s ease;
@@ -341,28 +337,26 @@
 
   .chapter-number {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 700;
     color: var(--gold);
-    min-width: 40px;
+    min-width: 36px;
     text-align: center;
     line-height: 1;
     padding-top: 2px;
   }
 
-  .chapter-content {
-    flex: 1;
-  }
+  .chapter-content { flex: 1; }
   .chapter-content strong {
     display: block;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
     color: var(--cream);
-    margin-bottom: 4px;
+    margin-bottom: 2px;
   }
   .chapter-content span {
-    font-size: 14px;
+    font-size: 13px;
     color: var(--text-dim);
     line-height: 1.5;
   }
@@ -376,6 +370,13 @@
     font-weight: 600;
     color: var(--gold);
     letter-spacing: 0.05em;
+  }
+
+  .chapter-item.blurred .chapter-content strong,
+  .chapter-item.blurred .chapter-content span {
+    filter: blur(5px);
+    user-select: none;
+    -webkit-user-select: none;
   }
 
   /* ---- PRICE ---- */
@@ -402,26 +403,17 @@
   }
 
   .price-label {
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--gold);
     margin-bottom: 10px;
   }
 
-  .price-old {
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--text-dim);
-    text-decoration: line-through;
-    margin-bottom: 6px;
-  }
-
   .price-main {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 72px;
     font-weight: 700;
     color: var(--cream);
@@ -446,7 +438,7 @@
   }
 
   .price-note {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: var(--text-dim);
@@ -460,8 +452,8 @@
     background: linear-gradient(135deg, #C8A96E, #A07840, #C8A96E);
     background-size: 200% 100%;
     color: var(--navy);
-    font-family: 'Lato', sans-serif;
-    font-size: 17px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -493,13 +485,12 @@
     flex-wrap: wrap;
   }
   .badge {
-    font-size: 13px;
+    font-size: 12px;
     color: var(--text-dim);
     display: flex;
     align-items: center;
     gap: 6px;
   }
-
 
   /* ---- FINAL CTA ---- */
   .final-cta {
@@ -556,8 +547,8 @@
     .price-main { font-size: 60px; }
     .price-main .currency { font-size: 22px; top: 8px; }
     .price-main .cents { font-size: 26px; top: 5px; }
-    .chapter-item { padding: 16px 18px; gap: 14px; }
-    .chapter-number { font-size: 24px; min-width: 32px; }
+    .chapter-item { padding: 14px 18px; gap: 14px; }
+    .chapter-number { font-size: 22px; min-width: 30px; }
   }
 </style>
 </head>
@@ -568,19 +559,19 @@
 
 <!-- TOP BAR -->
 <div class="topbar">
-  <p>Quaresma 2026 — <strong>o tempo de Deus é agora</strong></p>
+  <p>Retiro Espiritual Online — <strong>Quaresma 2026</strong></p>
 </div>
 
 <!-- HERO -->
 <section class="hero">
   <div class="container">
-    <span class="eyebrow">Quaresma 2026</span>
+    <span class="eyebrow">Retiro Espiritual Online</span>
 
     <h1 class="hero-title">
-      <em>21 Orações</em> Para Viver<br>a Quaresma Mais Profunda<br>da Sua Vida
+      Não deixe essa Quaresma ser<br><em>mais uma</em> em que Deus<br>fica cada vez mais longe
     </h1>
 
-    <p class="hero-sub">Um guia de oração dia a dia para quem quer<br>se reaproximar de Deus — de verdade — nesta Quaresma</p>
+    <p class="hero-sub">21 dias de oração guiada para quem está cansado<br>de sentir que fala sozinho quando ora</p>
 
     <div class="verse-box">
       <p>"Rasgai o vosso coração, e não as vossas vestes, e convertei-vos ao Senhor vosso Deus."</p>
@@ -588,8 +579,16 @@
     </div>
 
     <a href="https://pay.lowify.com.br/checkout.php?product_id=6bIwWX" class="cta-btn" style="max-width:480px; margin: 0 auto; display:block;">
-      Quero Começar as 21 Orações
+      Quero Começar Meu Retiro Espiritual
     </a>
+  </div>
+</section>
+
+<!-- JESUS QUESTION -->
+<section class="jesus-section reveal">
+  <div class="container" style="text-align:center;">
+    <h2 style="font-size: clamp(30px, 6vw, 50px); line-height: 1.2; margin-bottom: 20px;">Se você estivesse ao lado de <em>Jesus</em> agora mesmo — olho no olho —<br><em>qual desculpa você daria?</em></h2>
+    <p style="font-size: clamp(20px, 3.5vw, 28px); color: var(--cream); margin-bottom: 0;">Falta de tempo? Cansaço? Preguiça?<br><span class="highlight" style="font-size: clamp(22px, 4vw, 32px);">Você realmente acha isso cabível diante dEle?</span></p>
   </div>
 </section>
 
@@ -597,49 +596,32 @@
 <section class="pain-section reveal">
   <div class="container">
     <div class="section-divider"></div>
-    <h2>Seja honesto com você mesmo<br><em>por um momento.</em></h2>
+    <h2>Quantas Quaresmas já passaram<br><em>e nada mudou?</em></h2>
 
-    <p style="text-align:center; margin-bottom: 30px;">Quantas Quaresmas já passaram pela sua vida? Cinco? Dez? Vinte? E quantas delas realmente mudaram alguma coisa dentro de você?</p>
-
-    <p>A maioria das pessoas vive a Quaresma no automático. Faz um jejum aqui, uma oração rápida ali. Chega a Páscoa e tudo continua igual. <span class="bold">O mesmo vazio. A mesma distância de Deus. Os mesmos problemas sem resposta.</span></p>
-
-    <p>E não é por falta de vontade. Você <em>quer</em> orar melhor. Você <em>quer</em> sentir Deus mais perto. Você <em>sabe</em> que existe algo mais profundo. Mas na hora de se ajoelhar, as palavras não vêm. O cansaço vence. A rotina engole.</p>
+    <p style="text-align:center;">Seja honesto. Você sabe a resposta. O mesmo vazio no peito. A mesma distância de Deus. As mesmas promessas quebradas.</p>
 
     <ul class="pain-list">
-      <li>Você abre a boca para orar e não sabe o que dizer</li>
-      <li>Sente que suas orações não estão chegando a lugar nenhum</li>
-      <li>Carrega um peso — família, saúde, dinheiro, solidão — e não sabe como entregar</li>
-      <li>Quer se reaproximar de Deus mas parece que existe um muro entre vocês</li>
+      <li>Você tenta orar e as palavras morrem na boca</li>
+      <li>Sente que Deus está surdo — ou que você não merece ser ouvido</li>
+      <li>Carrega um peso que está te esmagando por dentro</li>
+      <li>Quer voltar pra Deus mas não sabe por onde começar</li>
     </ul>
 
-    <p style="text-align:center;">E a verdade mais dura é essa: <span class="highlight">se nada mudar agora, a próxima Quaresma vai ser igual.</span> E a próxima. E a próxima.</p>
-
-    <p style="text-align:center;" class="golden-line">"A não ser que você decida que essa — essa Quaresma aqui — vai ser diferente."</p>
+    <p style="text-align:center;"><span class="highlight">Se nada mudar agora, a próxima Quaresma vai ser igual.</span> E a próxima. E a próxima. Até o dia que você perceber que perdeu anos.</p>
   </div>
 </section>
 
-<!-- STORY -->
-<section class="story-section reveal">
+<!-- TURNING POINT -->
+<section class="story-section reveal" style="text-align:center;">
   <div class="container">
     <div class="section-divider"></div>
-    <h2>O problema nunca foi<br><em>a sua fé.</em></h2>
+    <h2>O problema não é <em>a sua fé.</em><br>É que ninguém te ensinou a orar.</h2>
 
-    <p>Você acredita em Deus. Você sabe que a oração tem poder. Você já viu milagres acontecerem na vida de outras pessoas. Então por que parece tão difícil na sua?</p>
+    <p>Você acredita em Deus. Você sabe que a oração tem poder. Mas quando se ajoelha, não sabe o que dizer. Não tem direção. Não tem estrutura. E aos poucos, desiste.</p>
 
-    <p>Porque <span class="bold">ninguém te deu um caminho</span>. Ninguém sentou com você e disse: "Olha, hoje você vai orar sobre isso. Amanhã sobre aquilo. E no final, você vai chegar transformado." A fé está lá — <span class="highlight">o que falta é direção</span>.</p>
+    <p style="text-align:center;" class="golden-line">"E se nessa Quaresma você fizesse um retiro espiritual — sem sair de casa — com uma oração guiada por dia?"</p>
 
-    <p>A Quaresma é o único momento do ano em que a Igreja inteira para e diz: <span class="bold">"Agora é hora de voltar."</span> É o convite mais claro que Deus faz. Não para o ano que vem. Não para quando você estiver pronto. Agora.</p>
-
-    <p class="golden-line">E se dessa vez você tivesse alguém te guiando — dia a dia — do primeiro passo até a Páscoa?</p>
-
-    <p>Foi exatamente por isso que criamos esse guia. <span class="bold">21 orações.</span> Uma por dia. Cada uma com versículo, reflexão e decreto. Para que você nunca mais fique sem saber o que dizer quando se ajoelhar.</p>
-
-    <div class="verse-box" style="text-align:center; margin: 30px auto;">
-      <p>"Buscai ao Senhor enquanto se pode achar, invocai-o enquanto está perto."</p>
-      <span>— Isaías 55:6</span>
-    </div>
-
-    <p style="text-align:center;"><em>"Enquanto se pode achar."</em> Isso quer dizer que <span class="highlight">existe um momento certo. E esse momento é agora.</span></p>
+    <p><span class="bold">21 orações. Uma por dia. Com versículo, reflexão e decreto.</span> Para que você nunca mais fique em silêncio diante de Deus por não saber o que falar.</p>
   </div>
 </section>
 
@@ -647,25 +629,23 @@
 <section class="product-section reveal" id="produto">
   <div class="container">
     <div class="section-divider"></div>
-    <h2>Isso é o que você recebe</h2>
+    <h2>Seu retiro espiritual<br><em>de 21 dias</em></h2>
 
     <div class="product-box">
       <span class="product-icon">📖</span>
       <p class="product-title">21 Orações da Quaresma</p>
-      <p class="product-subtitle">Sua jornada completa — do primeiro dia até a Páscoa</p>
+      <p class="product-subtitle">Um retiro espiritual online — do primeiro dia até a Páscoa</p>
 
-      <p style="text-align:center; margin-top:24px; font-size:16px; color:var(--gold-light);"><strong>Cada dia traz:</strong></p>
       <ul class="product-items">
-        <li>Um versículo bíblico escolhido para o tema do dia</li>
-        <li>Uma oração completa — pronta para você ler, orar e sentir</li>
-        <li>Uma reflexão curta para levar com você o dia inteiro</li>
+        <li>Um versículo bíblico escolhido para cada dia</li>
+        <li>Uma oração completa — pronta para orar e sentir</li>
+        <li>Uma reflexão para levar com você o dia inteiro</li>
         <li>Um decreto de fé para selar o que foi orado</li>
+        <li>Bônus: Guia de jejum quaresmal</li>
       </ul>
-
-      <p style="text-align:center; margin-top:24px; font-size:15px; color:var(--text-dim);">+ Bônus: Guia de jejum quaresmal</p>
     </div>
 
-    <p style="font-size: 15px; color: var(--text-dim); text-align:center;">Formato digital. Acesso imediato. Leia no celular, tablet ou computador.</p>
+    <p style="font-size: 14px; color: var(--text-dim); text-align:center;">Formato digital. Acesso imediato. Leia no celular, tablet ou computador.</p>
   </div>
 </section>
 
@@ -673,187 +653,58 @@
 <section class="chapters-section reveal">
   <div class="container">
     <div class="section-divider"></div>
-    <h2>Veja o que tem<br><em>dentro do guia</em></h2>
+    <h2>O que você vai orar<br><em>em cada dia</em></h2>
 
     <div class="chapters-grid">
       <div class="chapter-week-label">Semana 1 — Arrependimento e Purificação</div>
       <div class="chapter-item">
         <div class="chapter-number">01</div>
-        <div class="chapter-content">
-          <strong>Oração de Entrega</strong>
-          <span>Abrir o coração diante de Deus e reconhecer a necessidade da Sua presença</span>
-        </div>
+        <div class="chapter-content"><strong>Oração de Entrega</strong><span>Abrir o coração e reconhecer a necessidade de Deus</span></div>
       </div>
       <div class="chapter-item">
         <div class="chapter-number">02</div>
-        <div class="chapter-content">
-          <strong>Oração de Arrependimento</strong>
-          <span>Confessar os pecados e receber o perdão que liberta e renova</span>
-        </div>
+        <div class="chapter-content"><strong>Oração de Arrependimento</strong><span>Confessar os pecados e receber o perdão</span></div>
       </div>
       <div class="chapter-item">
         <div class="chapter-number">03</div>
-        <div class="chapter-content">
-          <strong>Oração de Purificação</strong>
-          <span>Pedir a Deus que limpe o que impede o coração de receber bênçãos</span>
-        </div>
+        <div class="chapter-content"><strong>Oração de Purificação</strong><span>Pedir que Deus limpe o que impede o coração</span></div>
       </div>
       <div class="chapter-item">
         <div class="chapter-number">04</div>
-        <div class="chapter-content">
-          <strong>Oração de Perdão</strong>
-          <span>Perdoar quem te feriu e quebrar as correntes da mágoa</span>
-        </div>
+        <div class="chapter-content"><strong>Oração de Perdão</strong><span>Perdoar quem te feriu e quebrar as correntes da mágoa</span></div>
       </div>
       <div class="chapter-item">
         <div class="chapter-number">05</div>
-        <div class="chapter-content">
-          <strong>Oração de Humildade</strong>
-          <span>Reconhecer que sem Deus nada somos — e nEle tudo podemos</span>
-        </div>
+        <div class="chapter-content"><strong>Oração de Humildade</strong><span>Reconhecer que sem Deus nada somos</span></div>
       </div>
       <div class="chapter-item">
         <div class="chapter-number">06</div>
-        <div class="chapter-content">
-          <strong>Oração de Silêncio</strong>
-          <span>Aprender a ouvir a voz de Deus no meio do barulho do mundo</span>
-        </div>
+        <div class="chapter-content"><strong>Oração de Silêncio</strong><span>Ouvir a voz de Deus no meio do barulho</span></div>
       </div>
-      <div class="chapter-item">
+      <div class="chapter-item blurred">
         <div class="chapter-number">07</div>
-        <div class="chapter-content">
-          <strong>Oração de Consagração</strong>
-          <span>Separar a sua vida, sua família e seus planos para o propósito de Deus</span>
-        </div>
+        <div class="chapter-content"><strong>Oração de Consagração</strong><span>Separar a sua vida para o propósito de Deus</span></div>
       </div>
-
-      <div class="chapter-week-label">Semana 2 — Renovação e Fortalecimento</div>
-      <div class="chapter-item">
+      <div class="chapter-item blurred">
         <div class="chapter-number">08</div>
-        <div class="chapter-content">
-          <strong>Oração de Fé</strong>
-          <span>Reacender a chama da fé quando tudo ao redor parece impossível</span>
-        </div>
+        <div class="chapter-content"><strong>Oração de Fé</strong><span>Reacender a chama quando tudo parece impossível</span></div>
       </div>
-      <div class="chapter-item">
+      <div class="chapter-item blurred">
         <div class="chapter-number">09</div>
-        <div class="chapter-content">
-          <strong>Oração de Fortalecimento</strong>
-          <span>Pedir força para vencer tentações, vícios e fraquezas</span>
-        </div>
+        <div class="chapter-content"><strong>Oração de Fortalecimento</strong><span>Pedir força contra tentações e fraquezas</span></div>
       </div>
-      <div class="chapter-item">
+      <div class="chapter-item blurred">
         <div class="chapter-number">10</div>
-        <div class="chapter-content">
-          <strong>Oração de Proteção</strong>
-          <span>Blindar sua casa, família e mente contra todo ataque espiritual</span>
-        </div>
+        <div class="chapter-content"><strong>Oração de Proteção</strong><span>Blindar sua casa e família contra ataques</span></div>
       </div>
-      <div class="chapter-item">
+      <div class="chapter-item blurred">
         <div class="chapter-number">11</div>
-        <div class="chapter-content">
-          <strong>Oração pela Família</strong>
-          <span>Cobrir filhos, cônjuge e pais com o manto da intercessão</span>
-        </div>
+        <div class="chapter-content"><strong>Oração pela Família</strong><span>Cobrir filhos, cônjuge e pais com intercessão</span></div>
       </div>
-      <div class="chapter-item">
-        <div class="chapter-number">12</div>
-        <div class="chapter-content">
-          <strong>Oração de Sabedoria</strong>
-          <span>Pedir discernimento para tomar decisões certas neste tempo</span>
-        </div>
-      </div>
-      <div class="chapter-item">
-        <div class="chapter-number">13</div>
-        <div class="chapter-content">
-          <strong>Oração de Paciência</strong>
-          <span>Confiar no tempo de Deus mesmo quando a resposta demora</span>
-        </div>
-      </div>
-      <div class="chapter-item">
-        <div class="chapter-number">14</div>
-        <div class="chapter-content">
-          <strong>Oração de Renovação</strong>
-          <span>Deixar para trás o velho e receber a identidade nova em Cristo</span>
-        </div>
-      </div>
-
-      <div class="chapter-week-label">Semana 3 — Entrega e Vida Nova</div>
-      <div class="chapter-item">
-        <div class="chapter-number">15</div>
-        <div class="chapter-content">
-          <strong>Oração de Cura Interior</strong>
-          <span>Pedir cura para feridas emocionais, traumas e dores antigas</span>
-        </div>
-      </div>
-      <div class="chapter-item">
-        <div class="chapter-number">16</div>
-        <div class="chapter-content">
-          <strong>Oração de Libertação</strong>
-          <span>Quebrar correntes, ciclos e tudo que prende e impede de avançar</span>
-        </div>
-      </div>
-      <div class="chapter-item">
-        <div class="chapter-number">17</div>
-        <div class="chapter-content">
-          <strong>Oração de Provisão</strong>
-          <span>Entregar as necessidades materiais nas mãos de quem é dono de tudo</span>
-        </div>
-      </div>
-      <div class="chapter-item">
-        <div class="chapter-number">18</div>
-        <div class="chapter-content">
-          <strong>Oração de Propósito</strong>
-          <span>Pedir clareza sobre o chamado de Deus para a sua vida</span>
-        </div>
-      </div>
-      <div class="chapter-item">
-        <div class="chapter-number">19</div>
-        <div class="chapter-content">
-          <strong>Oração de Entrega Total</strong>
-          <span>Render seus planos, medos e desejos ao controle de Deus</span>
-        </div>
-      </div>
-      <div class="chapter-item">
-        <div class="chapter-number">20</div>
-        <div class="chapter-content">
-          <strong>Oração de Gratidão</strong>
-          <span>Agradecer por tudo — mesmo o que ainda não vê — como ato de fé</span>
-        </div>
-      </div>
-      <div class="chapter-item">
-        <div class="chapter-number">21</div>
-        <div class="chapter-content">
-          <strong>Oração de Ressurreição</strong>
-          <span>Declarar vida nova — a mesma fé que move montanhas e vence a morte</span>
-        </div>
+      <div class="chapter-item" style="justify-content:center; padding: 20px 24px; border-bottom:none;">
+        <p style="margin:0; font-size:15px; color:var(--gold-light); font-style:italic;">+ mais 10 orações dentro do guia...</p>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- THE CHOICE -->
-<section class="story-section reveal">
-  <div class="container">
-    <div class="section-divider"></div>
-    <h2>Agora você tem<br><em>duas escolhas.</em></h2>
-
-    <p>A primeira é fechar essa página. Voltar para a rotina. Deixar essa Quaresma passar como todas as outras. Chegar à Páscoa do mesmo jeito que chegou nas anteriores — com aquela sensação de que <span class="bold">poderia ter sido diferente</span>.</p>
-
-    <p>Ninguém vai te culpar. A vida é corrida. Sempre tem algo mais urgente. Sempre dá para deixar para o ano que vem.</p>
-
-    <p style="text-align:center;" class="golden-line">Mas quantos "anos que vem" já passaram?</p>
-
-    <p>A segunda escolha é simples: <span class="bold">você decide que essa Quaresma vai ser a primeira em que você realmente fez algo diferente.</span> Não algo grandioso. Não algo que exige horas do seu dia. Apenas 10 minutos. Uma oração. Um versículo. Uma reflexão. Todo dia.</p>
-
-    <p>21 dias. É só isso. <span class="highlight">E quando chegar a Páscoa, você vai saber — dentro de você — que algo mudou.</span></p>
-
-    <div class="verse-box" style="text-align:center; margin: 30px auto;">
-      <p>"Eu estou à porta e bato. Se alguém ouvir a minha voz e abrir a porta, entrarei."</p>
-      <span>— Apocalipse 3:20</span>
-    </div>
-
-    <p style="text-align:center;">Ele está batendo. A pergunta é: <span class="highlight">você vai abrir?</span></p>
   </div>
 </section>
 
@@ -867,8 +718,10 @@
       <p class="price-main"><span class="currency">R$</span>14<span class="cents">,90</span></p>
       <p class="price-note">pagamento único · acesso para sempre</p>
 
+      <p style="font-size: 15px; color: var(--cream); margin-bottom: 20px; line-height: 1.6;">Menos que um café com pão de queijo.<br><span class="highlight">Esse é o preço para você não ter mais desculpa nenhuma.</span></p>
+
       <a href="https://pay.lowify.com.br/checkout.php?product_id=6bIwWX" class="cta-btn">
-        Quero Começar as 21 Orações
+        Quero Começar Meu Retiro Espiritual
       </a>
 
       <div class="secure-badges">
@@ -878,23 +731,19 @@
       </div>
     </div>
 
-    <p style="max-width: 460px; margin: 30px auto 0; text-align:center; font-size: 15px; color: var(--text-dim);">Se em 7 dias você não sentir que esse guia está transformando sua Quaresma, devolvemos cada centavo. Sem perguntas.</p>
+    <p style="max-width: 460px; margin: 30px auto 0; text-align:center; font-size: 14px; color: var(--text-dim);">Se em 7 dias você não sentir que esse retiro está transformando sua Quaresma, devolvemos cada centavo. Sem perguntas.</p>
   </div>
 </section>
 
 <!-- FINAL CTA -->
 <section class="final-cta reveal">
   <div class="container">
-    <p class="final-verse">"Voltai para mim de todo o vosso coração, com jejuns, com choro e com pranto."<br><small style="font-size:14px; letter-spacing:0.1em;">— Joel 2:12</small></p>
+    <p style="max-width: 520px; margin: 0 auto 20px; text-align:center;">Um guia prático — <span class="highlight">uma oração por dia, pronta, com versículo e reflexão</span> — para abrir no celular de manhã e colocar em prática antes de sair de casa.</p>
 
-    <p style="max-width: 520px; margin: 0 auto 20px; text-align:center;">Você leu até aqui. Isso já diz muito sobre o que o seu coração está pedindo. A maioria das pessoas vai ler essa página e não fazer nada. Vai fechar a aba e voltar amanhã para a mesma vida.</p>
-
-    <p style="max-width: 520px; margin: 0 auto 20px; text-align:center;"><span class="bold">Mas você não precisa ser essa pessoa.</span></p>
-
-    <p style="max-width: 520px; margin: 0 auto 36px; text-align:center;">Por menos do que um café, você pode começar amanhã de manhã com uma oração que tem direção, estrutura e poder. E daqui a 21 dias, olhar para trás e saber que <span class="highlight">essa foi a Quaresma que mudou tudo</span>.</p>
+    <p style="max-width: 520px; margin: 0 auto 36px; text-align:center;">Sem complicação. Sem desculpa. <span class="bold">Só você e Deus, 10 minutos por dia, durante 21 dias.</span></p>
 
     <a href="https://pay.lowify.com.br/checkout.php?product_id=6bIwWX" class="cta-btn" style="max-width: 500px; margin: 0 auto; display:block;">
-      Quero Começar Minha Jornada de 21 Dias
+      Quero Começar Agora
     </a>
   </div>
 </section>
