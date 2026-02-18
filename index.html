@@ -207,9 +207,35 @@
   /* ---- JESUS SECTION ---- */
   .jesus-section {
     padding: 80px 0;
-    background: rgba(200,169,110,0.04);
-    border-top: 1px solid rgba(200,169,110,0.15);
-    border-bottom: 1px solid rgba(200,169,110,0.15);
+    background: url('img/bible-light.jpg') center center / cover no-repeat;
+    position: relative;
+  }
+  .jesus-section::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: rgba(11,18,32,0.82);
+  }
+  .jesus-section .container {
+    position: relative; z-index: 2;
+  }
+
+  /* ---- IMAGE BREAK ---- */
+  .image-break {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+  }
+  .image-break img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+  .image-break-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to bottom, var(--navy) 0%, rgba(11,18,32,0.3) 30%, rgba(11,18,32,0.3) 70%, var(--navy) 100%);
   }
 
   /* ---- PAIN SECTION ---- */
@@ -217,21 +243,30 @@
 
   .pain-list {
     list-style: none;
-    margin: 24px 0;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
   .pain-list li {
-    padding: 14px 20px;
-    margin-bottom: 10px;
-    border-left: 3px solid rgba(200,169,110,0.4);
-    background: rgba(11,18,32,0.5);
-    font-size: 16px;
-    line-height: 1.7;
-    color: var(--text);
+    padding: 22px 28px;
+    background: linear-gradient(135deg, rgba(19,29,48,0.9), rgba(28,42,66,0.7));
+    border: 1px solid rgba(200,169,110,0.2);
+    border-left: 4px solid var(--gold);
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--cream);
+    display: flex;
+    align-items: center;
+    gap: 16px;
   }
   .pain-list li::before {
-    content: '\2192';
+    content: '\2716';
     color: var(--gold);
-    margin-right: 10px;
+    font-size: 20px;
+    flex-shrink: 0;
   }
 
   /* ---- GOLDEN LINE ---- */
@@ -492,20 +527,6 @@
     gap: 6px;
   }
 
-  /* ---- FINAL CTA ---- */
-  .final-cta {
-    text-align: center;
-    padding: 80px 0;
-  }
-
-  .final-verse {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(22px, 4vw, 32px);
-    font-style: italic;
-    color: var(--gold-light);
-    margin-bottom: 40px;
-    line-height: 1.5;
-  }
 
   /* ---- FOOTER ---- */
   footer {
@@ -611,25 +632,17 @@
   </div>
 </section>
 
-<!-- TURNING POINT -->
-<section class="story-section reveal" style="text-align:center;">
-  <div class="container">
-    <div class="section-divider"></div>
-    <h2>O problema não é <em>a sua fé.</em><br>É que ninguém te ensinou a orar.</h2>
-
-    <p>Você acredita em Deus. Você sabe que a oração tem poder. Mas quando se ajoelha, não sabe o que dizer. Não tem direção. Não tem estrutura. E aos poucos, desiste.</p>
-
-    <p style="text-align:center;" class="golden-line">"E se nessa Quaresma você fizesse um retiro espiritual — sem sair de casa — com uma oração guiada por dia?"</p>
-
-    <p><span class="bold">21 orações. Uma por dia. Com versículo, reflexão e decreto.</span> Para que você nunca mais fique em silêncio diante de Deus por não saber o que falar.</p>
-  </div>
-</section>
+<!-- IMAGE BREAK -->
+<div class="image-break reveal">
+  <img src="img/prayer-hands.jpg" alt="Mãos em oração" loading="lazy">
+  <div class="image-break-overlay"></div>
+</div>
 
 <!-- PRODUCT -->
 <section class="product-section reveal" id="produto">
   <div class="container">
     <div class="section-divider"></div>
-    <h2>Seu retiro espiritual<br><em>de 21 dias</em></h2>
+    <h2>Ninguém te ensinou a orar.<br><em>Esse retiro vai.</em></h2>
 
     <div class="product-box">
       <span class="product-icon">📖</span>
@@ -735,18 +748,11 @@
   </div>
 </section>
 
-<!-- FINAL CTA -->
-<section class="final-cta reveal">
-  <div class="container">
-    <p style="max-width: 520px; margin: 0 auto 20px; text-align:center;">Um guia prático — <span class="highlight">uma oração por dia, pronta, com versículo e reflexão</span> — para abrir no celular de manhã e colocar em prática antes de sair de casa.</p>
-
-    <p style="max-width: 520px; margin: 0 auto 36px; text-align:center;">Sem complicação. Sem desculpa. <span class="bold">Só você e Deus, 10 minutos por dia, durante 21 dias.</span></p>
-
-    <a href="https://pay.lowify.com.br/checkout.php?product_id=6bIwWX" class="cta-btn" style="max-width: 500px; margin: 0 auto; display:block;">
-      Quero Começar Agora
-    </a>
-  </div>
-</section>
+<!-- IMAGE BREAK 2 -->
+<div class="image-break reveal">
+  <img src="img/cross-light.jpg" alt="Cruz iluminada" loading="lazy">
+  <div class="image-break-overlay"></div>
+</div>
 
 <!-- FOOTER -->
 <footer>
