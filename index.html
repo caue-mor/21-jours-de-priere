@@ -168,6 +168,19 @@
     opacity: 0.9;
   }
 
+  .social-proof {
+    margin-top: 24px;
+    font-size: 14px;
+    color: var(--text-dim);
+    letter-spacing: 0.02em;
+    text-align: center;
+    animation: fadeInUp 0.9s 0.65s ease both;
+  }
+  .social-proof strong {
+    color: var(--gold);
+    font-weight: 600;
+  }
+
   .verse-box {
     display: inline-block;
     border-left: 3px solid var(--gold);
@@ -228,7 +241,9 @@
   .jesus-section::before {
     content: '';
     position: absolute; inset: 0;
-    background: rgba(11,18,32,0.82);
+    background:
+      linear-gradient(to bottom, var(--navy) 0%, rgba(11,18,32,0.3) 25%, rgba(11,18,32,0.3) 75%, var(--navy) 100%),
+      rgba(11,18,32,0.65);
   }
   .jesus-section .container {
     position: relative; z-index: 2;
@@ -578,13 +593,61 @@
   }
 
   @media (max-width: 600px) {
-    .product-box, .price-box { padding: 36px 24px; }
-    .hero { padding: 50px 0 30px; }
-    .price-main { font-size: 60px; }
-    .price-main .currency { font-size: 22px; top: 8px; }
-    .price-main .cents { font-size: 26px; top: 5px; }
-    .chapter-item { padding: 14px 18px; gap: 14px; }
-    .chapter-number { font-size: 22px; min-width: 30px; }
+    body { font-size: 16px; line-height: 1.75; }
+    .container { padding: 0 18px; }
+    section { padding: 44px 0; }
+
+    /* Hero */
+    .hero { padding: 40px 0 28px; }
+    .eyebrow { font-size: 10px; padding: 6px 16px; margin-bottom: 22px; }
+    .hero-title { font-size: clamp(26px, 7vw, 40px); line-height: 1.2; margin-bottom: 16px; }
+    .hero-sub { font-size: 17px; margin-bottom: 28px; }
+    .hero-sub br { display: none; }
+    .verse-box { padding: 14px 18px; margin-bottom: 36px; }
+    .verse-box p { font-size: 17px; }
+
+    /* Jesus section */
+    .jesus-section { padding: 50px 0; }
+
+    /* Pain list */
+    .pain-list li { padding: 18px 18px; font-size: 16px; }
+
+    /* Image break */
+    .image-break { height: 200px; }
+
+    /* Product */
+    .product-box { padding: 32px 20px; }
+    .product-title { font-size: 28px; }
+    .product-subtitle { font-size: 16px; }
+    .product-items li { font-size: 14px; padding: 10px 0; }
+
+    /* Chapters */
+    .chapters-section { padding: 44px 0; }
+    .chapter-item { padding: 14px 16px; gap: 12px; }
+    .chapter-number { font-size: 20px; min-width: 28px; }
+    .chapter-content strong { font-size: 14px; }
+    .chapter-content span { font-size: 12px; }
+    .chapter-week-label { font-size: 16px; padding: 10px 16px; }
+
+    /* Price */
+    .price-box { padding: 36px 22px; }
+    .price-main { font-size: 56px; }
+    .price-main .currency { font-size: 20px; top: 8px; }
+    .price-main .cents { font-size: 24px; top: 5px; }
+    .price-label { font-size: 12px; }
+
+    /* CTA button */
+    .cta-btn { font-size: 14px; padding: 18px 20px; }
+
+    /* Badges */
+    .secure-badges { gap: 12px; }
+    .badge { font-size: 11px; }
+
+    /* Section headings */
+    h2 { font-size: clamp(24px, 6vw, 36px); margin-bottom: 18px; }
+
+    /* Golden line */
+    .golden-line { font-size: clamp(18px, 4.5vw, 24px); padding: 0 10px; }
   }
 </style>
 </head>
@@ -604,27 +667,16 @@
     <span class="eyebrow">Retiro Espiritual Online</span>
 
     <h1 class="hero-title">
-      Não deixe essa Quaresma ser<br><em>mais uma</em> em que Deus<br>fica cada vez mais longe
+      Não deixe essa Quaresma ser <em>mais uma</em> em que Deus fica cada vez mais longe
     </h1>
 
     <p class="hero-sub">21 dias de oração guiada para quem está cansado<br>de sentir que fala sozinho quando ora</p>
 
-    <div class="verse-box">
-      <p>"Rasgai o vosso coração, e não as vossas vestes, e convertei-vos ao Senhor vosso Deus."</p>
-      <span>— Joel 2:13</span>
-    </div>
-
     <a href="https://pay.lowify.com.br/checkout.php?product_id=6bIwWX" class="cta-btn" style="max-width:480px; margin: 0 auto; display:block;">
       Quero Começar Meu Retiro Espiritual
     </a>
-  </div>
-</section>
 
-<!-- JESUS QUESTION -->
-<section class="jesus-section reveal">
-  <div class="container" style="text-align:center;">
-    <h2 style="font-size: clamp(30px, 6vw, 50px); line-height: 1.2; margin-bottom: 20px;">Se você estivesse ao lado de <em>Jesus</em> agora mesmo — olho no olho —<br><em>qual desculpa você daria?</em></h2>
-    <p style="font-size: clamp(20px, 3.5vw, 28px); color: var(--cream); margin-bottom: 0;">Falta de tempo? Cansaço? Preguiça?<br><span class="highlight" style="font-size: clamp(22px, 4vw, 32px);">Você realmente acha isso cabível diante dEle?</span></p>
+    <p class="social-proof">Mais de <strong>5.000 cristãos</strong> já iniciaram a Quaresma com esse retiro</p>
   </div>
 </section>
 
@@ -634,7 +686,7 @@
     <div class="section-divider"></div>
     <h2>Quantas Quaresmas já passaram<br><em>e nada mudou?</em></h2>
 
-    <p style="text-align:center;">Seja honesto. Você sabe a resposta. O mesmo vazio no peito. A mesma distância de Deus. As mesmas promessas quebradas.</p>
+    <p style="text-align:center;">O mesmo vazio no peito. A mesma distância de Deus. As mesmas promessas quebradas.</p>
 
     <ul class="pain-list">
       <li>Você tenta orar e as palavras morrem na boca</li>
@@ -643,45 +695,32 @@
       <li>Quer voltar pra Deus mas não sabe por onde começar</li>
     </ul>
 
-    <p style="text-align:center;"><span class="highlight">Se nada mudar agora, a próxima Quaresma vai ser igual.</span> E a próxima. E a próxima. Até o dia que você perceber que perdeu anos.</p>
+    <p style="text-align:center;"><span class="highlight">Se nada mudar agora, a próxima Quaresma vai ser igual.</span> E a próxima. E a próxima.</p>
   </div>
 </section>
 
-<!-- IMAGE BREAK -->
-<div class="image-break reveal">
-  <img src="img/prayer-hands.jpg" alt="Mãos em oração" loading="lazy">
-  <div class="image-break-overlay"></div>
-</div>
+<!-- JESUS QUESTION -->
+<section class="jesus-section reveal">
+  <div class="container" style="text-align:center;">
+    <h2 style="font-size: clamp(28px, 6vw, 50px); line-height: 1.2; margin-bottom: 20px;">Se você estivesse ao lado de <em>Jesus</em> agora mesmo — olho no olho — <em>qual desculpa você daria?</em></h2>
+    <p style="font-size: clamp(18px, 3.5vw, 24px); color: var(--text); margin-bottom: 0; line-height: 1.7;">Uma oração por dia. 10 minutos. Tão simples que <span class="highlight" style="font-size: clamp(20px, 4vw, 28px);">Nosso Senhor ficaria envergonhado de quem não firmasse um compromisso tão fácil.</span></p>
+  </div>
+</section>
 
-<!-- PRODUCT -->
+
+<!-- WHAT YOU GET -->
 <section class="product-section reveal" id="produto">
-  <div class="container">
+  <div class="container" style="text-align:center;">
     <div class="section-divider"></div>
-    <h2>Ninguém te ensinou a orar.<br><em>Esse retiro vai.</em></h2>
-
-    <div class="product-box">
-      <span class="product-icon">📖</span>
-      <p class="product-title">21 Orações da Quaresma</p>
-      <p class="product-subtitle">Um retiro espiritual online — do primeiro dia até a Páscoa</p>
-
-      <ul class="product-items">
-        <li>Um versículo bíblico escolhido para cada dia</li>
-        <li>Uma oração completa — pronta para orar e sentir</li>
-        <li>Uma reflexão para levar com você o dia inteiro</li>
-        <li>Um decreto de fé para selar o que foi orado</li>
-        <li>Bônus: Guia de jejum quaresmal</li>
-      </ul>
-    </div>
-
-    <p style="font-size: 14px; color: var(--text-dim); text-align:center;">Formato digital. Acesso imediato. Leia no celular, tablet ou computador.</p>
+    <h2>21 orações prontas.<br><em>Uma por dia. Sem complicação.</em></h2>
+    <p style="max-width:540px; margin: 0 auto 16px; text-align:center;">Cada oração vem com versículo, reflexão e decreto. Você abre no celular de manhã, ora em 10 minutos e segue o dia com direção.</p>
   </div>
 </section>
 
 <!-- CHAPTERS -->
 <section class="chapters-section reveal">
   <div class="container">
-    <div class="section-divider"></div>
-    <h2>O que você vai orar<br><em>em cada dia</em></h2>
+    <h2>Veja a trilha dos<br><em>21 dias</em></h2>
 
     <div class="chapters-grid">
       <div class="chapter-week-label">Semana 1 — Arrependimento e Purificação</div>
@@ -736,6 +775,13 @@
   </div>
 </section>
 
+<!-- EMOTIONAL CLOSE -->
+<section class="story-section reveal" style="text-align:center; padding: 50px 0;">
+  <div class="container">
+    <p style="font-size: clamp(20px, 4vw, 28px); font-family: 'Cormorant Garamond', serif; font-style: italic; color: var(--gold); line-height: 1.4; max-width: 560px; margin: 0 auto;">Ele suportou a cruz, os pregos e a lança no peito. O mínimo que podemos fazer é uma oração por dia durante 21 dias.</p>
+  </div>
+</section>
+
 <!-- OFFER / PRICE -->
 <section class="price-section reveal" id="oferta">
   <div class="container">
@@ -746,7 +792,7 @@
       <p class="price-main"><span class="currency">R$</span>14<span class="cents">,90</span></p>
       <p class="price-note">pagamento único · acesso para sempre</p>
 
-      <p style="font-size: 15px; color: var(--cream); margin-bottom: 20px; line-height: 1.6;">Menos que um café com pão de queijo.<br><span class="highlight">Esse é o preço para você não ter mais desculpa nenhuma.</span></p>
+      <p style="font-size: 15px; color: var(--cream); margin-bottom: 20px; line-height: 1.6;">Um preço simbólico, paroquial.<br><span class="highlight">Para que nada fique entre você e Deus.</span></p>
 
       <a href="https://pay.lowify.com.br/checkout.php?product_id=6bIwWX" class="cta-btn">
         Quero Começar Meu Retiro Espiritual
@@ -763,11 +809,6 @@
   </div>
 </section>
 
-<!-- IMAGE BREAK 2 -->
-<div class="image-break reveal">
-  <img src="img/cross-light.jpg" alt="Cruz iluminada" loading="lazy">
-  <div class="image-break-overlay"></div>
-</div>
 
 <!-- FOOTER -->
 <footer>
